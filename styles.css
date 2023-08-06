@@ -1,0 +1,601 @@
+/*Poppins and Montserrat Links*/
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    border: 5px solid #fff;
+    border-top: 5px solid #f6c90e;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Nav Bar*/
+
+.navbar {
+    margin: 0px 20px;
+    padding: 40px 0 0 20px;
+}
+
+.nav-item .nav-link {
+    margin: 0 10px;
+}
+
+.heading {
+    color: rgb(254, 184, 1);
+    font-weight: 900;
+    font-family: Montserrat;
+    font-size: 23px;
+}
+
+.heading:hover {
+    color: rgb(254, 184, 1);
+}
+
+.links {
+    font-family: Montserrat;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.links:hover {
+    color: rgb(254, 184, 1);
+}
+
+.search-bar {
+    border: solid 0.5px #fff;
+    border-radius: 13px;
+    padding: 5px;
+    background-color: rgba(247, 251, 255, 0.1);
+    width: 170px;
+}
+
+.search-bar input {
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 600;
+    width: 120px;
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    font-size: 16px;
+    color: #fff;
+}
+
+.search-bar input:focus {
+    border: none;
+    outline: none;
+}
+
+.search-bar i {
+    color: #fff;
+}
+
+
+/*Main Content*/
+
+.main-section {
+    background-image: url(/Images/Rava-image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+
+.main {
+    width: 400px;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.title {
+    color: #fff;
+    width: 300px;
+    margin: 10px 0;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-family: Tektur;
+    font-weight: 400;
+}
+
+.tag-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.tag-line h3 {
+    font-size: 14px;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 600;
+    margin: 0;
+    line-height: 20px;
+}
+
+.tag-line h5 {
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: rgb(0, 255, 64);
+    margin: 0;
+    line-height: 20px;
+}
+
+.description {
+    width: 400px;
+    font-size: 13px;
+}
+
+.description p {
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.rating {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.rating h2 {
+    font-size: 12px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.fa-solid {
+    color: yellow;
+}
+
+.fa-regular {
+    color: #fff;
+}
+
+.buttons {
+    height: 40px;
+}
+
+.play {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgb(2, 131, 250);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+.play:hover {
+    background-color: rgb(23, 142, 253);
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: solid 2px #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.movie-pictures {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.images img {
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    opacity: 0.7;
+}
+
+.images img:hover {
+    cursor: pointer;
+}
+
+.active-image img {
+    width: 220px;
+    height: 120px;
+    opacity: 0.9;
+    border: solid 2px #fff;
+}
+
+
+/*Movie Cards*/
+
+.category-buttons {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.category-buttons .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.category-buttons .buttons button {
+    width: 120px;
+    margin: 20px;
+    height: 35px;
+    border: solid 1px #fff;
+    color: #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.category-buttons .buttons button:hover {
+    background-color: rgb(254, 184, 1);
+    color: #fff;
+    border: none;
+}
+
+#active-btn {
+    background-color: rgb(254, 184, 1);
+    color: #fff;
+    border: none;
+}
+
+
+/*Card*/
+
+.category-header {
+    margin: 10px 90px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.category-title {
+    font-family: Montserrat;
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+}
+
+.view-all {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+.view-all i {
+    color: #fff;
+}
+
+.view-all:hover {
+    cursor: pointer;
+}
+
+.view-all i:hover {
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    font-family: Poppins;
+    margin: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card .content {
+    position: absolute;
+    z-index: 10;
+    bottom: -100%;
+    background-color: rgba(255, 255, 255, 0.705);
+    transition: 0.3s;
+    height: 190px;
+    padding: 2px 5px 0 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card:hover .content {
+    bottom: 0px;
+}
+
+.card:hover img {
+    transition: 0.3s;
+    filter: blur(2px);
+}
+
+.card .content h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card .content p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.card img {
+    width: 200px;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card .rating .fa-solid {
+    margin-top: 0;
+    color: #333;
+}
+
+.card .rating .fa-regular {
+    color: #333;
+}
+
+.card .rating h2 {
+    color: #000;
+    font-weight: 400;
+}
+
+.card .buttons .play {
+    height: 40px;
+    width: 70px;
+    font-size: 15px;
+}
+
+.card .buttons .plus {
+    border: solid 1px #333;
+    color: #333;
+}
+
+
+/*Seasons*/
+
+.seasons-section {
+    background-image: url(/Images/money-heist-image3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.seasons-section .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seasons-section .col-lg-6 {
+    padding: 100px 100px 10px 100px;
+}
+
+.seasons-section .movie-pictures {
+    display: flex;
+    flex-direction: column;
+}
+
+.seasons-section .movie-pictures .images img {
+    height: 150px;
+    width: 250px;
+}
+
+.seasons-section .movie-pictures .seasons-active-image {
+    width: 280px;
+    height: 180px;
+}
+
+.seasons-section .movie-pictures .seasons-active-image img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+
+/*Tv Series*/
+
+.announcement {
+    font-family: Montserrat;
+    font-family: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    margin: 100px 0;
+}
+
+.tv-series-section {
+    background-image: url(/Images/marvel-image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.tv-series-section .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tv-series-section .col-lg-6 {
+    padding: 100px 100px 10px 100px;
+}
+
+.tv-series-section .movie-pictures {
+    display: flex;
+    flex-direction: column;
+}
+
+.tv-series-section .movie-pictures .images img {
+    height: 150px;
+    width: 250px;
+}
+
+.tv-series-section .movie-pictures .tv-series-active-image {
+    width: 280px;
+    height: 180px;
+}
+
+.tv-series-section .movie-pictures .tv-series-active-image img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.footer-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer hr {
+    color: #fff;
+}
+
+.footer-card {
+    padding: 20px 10px;
+    width: 270px;
+    height: 230px;
+}
+
+.footer-card h1 {
+    color: #f6c90e;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.footer-card h2 {
+    color: #fff;
+    font-size: 17px;
+    font-family: Poppins;
+}
+
+.footer-card h2:hover {
+    cursor: pointer;
+}
+
+.footer .category-header .view-all {
+    font-size: 20px;
+    color: #f6c90e;
+}
+
+.footer .category-header .view-all i {
+    font-size: 25px;
+    color: #f6c90e;
+}
+
+@media screen and (max-width:800px) {
+    .main-section {
+        height: 150vh;
+    }
+    .movie-pictures {
+        flex-direction: column;
+    }
+    .category-buttons .buttons .category-btn {
+        display: none;
+    }
+    .category-header {
+        margin: 10px 30px;
+    }
+    .seasons-section {
+        height: 160vh;
+    }
+    .tv-series-section {
+        height: 160vh;
+    }
+    .seasons-section .col-lg-6 {
+        padding: 30px 30px 10px 30px;
+    }
+    .tv-series-section .col-lg-6 {
+        padding: 30px 30px 10px 30px;
+    }
+    .tv-series-section .movie-pictures .images img {
+        margin-left: 0;
+    }
+    .footer-card {
+        width: 180px;
+    }
+}
