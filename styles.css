@@ -109,7 +109,7 @@ body {
 /*Main Content*/
 
 .main-section {
-    background-image: url(/Images/Rava-image2.jpg);
+    background-image: url(Images/Rava-image2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 110vh;
@@ -422,7 +422,7 @@ body {
 /*Seasons*/
 
 .seasons-section {
-    background-image: url(/Images/money-heist-image3.jpg);
+    background-image: url(Images/money-heist-image3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -476,7 +476,7 @@ body {
 }
 
 .tv-series-section {
-    background-image: url(/Images/marvel-image1.jpg);
+    background-image: url(Images/marvel-image1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
