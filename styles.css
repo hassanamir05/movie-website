@@ -571,6 +571,12 @@ body {
     .main-section {
         height: 150vh;
     }
+    .tag-line{
+        width:250px;
+    }
+    .description{
+        width:250px;
+    }
     .movie-pictures {
         flex-direction: column;
     }
