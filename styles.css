@@ -567,7 +567,7 @@ body {
     color: #f6c90e;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:786px) {
     .main-section {
         height: 150vh;
     }
@@ -587,10 +587,10 @@ body {
         margin: 10px 30px;
     }
     .seasons-section {
-        height: 160vh;
+        height: 150vh;
     }
     .tv-series-section {
-        height: 160vh;
+        height: 150vh;
     }
     .seasons-section .col-lg-6 {
         padding: 30px 30px 10px 30px;
