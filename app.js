@@ -1,7 +1,3 @@
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    preloader.style.display = 'none';
-});
 
 let changeBackgroundImage = clickedImage => {
     const mainSection = document.getElementById('main-section');
